@@ -1,0 +1,199 @@
+$mainColor: #585858;
+$whiteColor: #fff;
+$blueColor: #011FCF;
+
+.payment {
+    padding: 1rem;
+    .order {
+        background-color: #fff;
+        padding: 2rem 1rem;
+        a {
+            color: $blueColor;
+            .arrow {
+                color: $mainColor;
+                margin-right: .6rem;
+            }
+        }
+        h2 {
+            margin: 1rem
+        }
+
+        .summary {
+            padding: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+            .order-box {
+                display: flex;
+                img {
+                    padding: 0;
+                    width: 50px;
+                }
+                .items {
+                    margin-left: .5rem;
+                    .itemname {
+                        font-weight: 600;
+                        padding-left: 0.5rem;
+                    }
+                    .qty {
+                        font-size: 0.8rem;
+                    }
+                    button {
+                        border-radius: 1px;
+                        background: #EDEEF0;
+                        border: none;
+                        padding: .5rem;
+                    }
+                    span {
+                        margin: 0 .5rem
+                    }
+                }
+            }
+        }
+        .otherDetails {
+            padding: 1rem .5rem;
+            // text-align: center;
+            .discount {
+                input[type=text] {
+                    border-radius: 42px;
+                    border: 1px solid #E3E3E3;
+                    background: #F9F9F9;
+                    width: 80%;
+                    padding: .5rem .8rem;
+                    margin: .5rem 0;
+                }
+                button {
+                    background-color: $whiteColor;
+                    border: 1px solid $blueColor;
+                    color: $blueColor;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    padding: .5rem 1rem;
+                    margin-left: 1rem;
+                }
+            }
+            p {
+                color: $mainColor;
+                padding: 1rem;
+                span {
+                    float: right;
+                }
+                .free {
+                    color: green
+                }
+            }
+        }
+        
+    }
+    .pay-ship {
+        background-color: #F4F4F4;
+        padding: 1.5rem 1rem;
+        color: $mainColor;
+        .payment-link {
+            margin: 2rem 1rem;
+            .active-link {
+                color: $blueColor;
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .link {
+                color: $mainColor;
+                text-decoration: none;
+                margin: 0 .5rem;
+                &:active, &:hover, &:focus {
+                    color: $blueColor;
+                    font-weight: 600;
+                }
+            }
+        }
+        .toPay {
+            
+            .payment-form {
+                background-color: $whiteColor;
+                padding: 2rem;
+                h2 {
+                    font-weight: 600;
+                    margin: 1rem 0;
+                }
+                label {
+                    margin-left: .5rem;
+                    p {
+                        font-size: 13px;
+                        margin-left: 1.2rem;
+                        color: #0b0b0b;
+                    }
+                }
+            }
+            .shipment-form {
+               background-color: $whiteColor;
+                padding: 1rem 2rem;
+                margin-bottom: 1.2rem;
+                h2 {
+                    font-weight: 600;
+                    margin: 1rem 0;
+                }
+                label {
+                    color: #383636;
+                } 
+
+                .checkbox {
+                    margin-left: 0.5rem;
+                }
+
+                input[type=text], input[type=email], input[type=number], #number, select {
+                    width: 100%;
+                    padding: .5rem 1rem;
+                    margin: 0.5rem 0; 
+                }
+                
+                
+            }
+            button[type=submit] {
+                background-color: $blueColor;
+                color: $whiteColor;
+                padding: .6rem .9rem;
+                border: none;
+                font-weight: 600;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .back-btn {
+                background-color: $whiteColor;
+                border: 1px solid $blueColor;
+                color: $blueColor;
+                border-radius: 15px;
+                font-weight: 600;
+                padding: .5rem 1.2rem;
+                margin-top: 1rem;
+            }
+            .makePayment-btn {
+                background-color: $blueColor;
+                border: none;
+                color: $whiteColor;
+                border-radius: 15px;
+                font-weight: 600;
+                padding: .5rem 1.2rem;
+                float: right;
+                margin-top: 1rem;
+            }
+        }
+    }
+    @media screen and (min-width: 700px){
+        display: flex;
+        .order {
+            width: 50%;
+            padding: 3rem 2rem;
+            .summary {
+                padding: 1rem 2rem;
+            }
+            .otherDetails {
+                padding: 2rem;
+            }
+        }
+        .pay-ship {
+            width: 50%;
+            padding: 3rem 2rem;
+        }
+    }
+    
+}

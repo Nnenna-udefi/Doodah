@@ -1,0 +1,184 @@
+$primary-color: #011FCF;
+$background-color: #E6E6E6;
+
+
+    header {
+        nav {
+            padding: 1rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            
+            .logo-block {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    // margin-top: 10px;
+                    // margin-left: 20px;
+                }
+                .logo-text {
+                    margin-left: .3rem;
+                    font-size: 11px;
+                    p {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .logo {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .search-form {
+                position: relative;
+                display: inline-block;
+                
+                .search-input {
+                    background-color: $background-color;
+                    border: 0.5px solid #8A8A8A;
+                    padding: .5rem 1rem;
+                    border-radius: 29px;
+                    width: 400px;
+                    // width: 100%;
+                    position: relative;
+                    float: left;
+
+                    &:focus {
+                        box-shadow: 0 0 2px rgba(0,0,0,0.8) inset;
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    top: 20%;
+                    right: 10px;
+                    cursor: pointer;
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+
+            .menu-link {
+                .link {
+                    margin-right: 2rem;
+                    color: #333;
+                    text-decoration: none;
+                    font-size: 14px;
+
+                    &:hover, &:focus {
+                        color: $primary-color;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+                .out-link {
+                    margin-right: 2rem;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 14px;
+                    background-color: rgb(132, 26, 26);
+                    padding: 0.5rem 0.7rem;
+                    font-weight: 600;
+                }
+
+            }
+
+            .cart {
+                color: $primary-color;
+                text-decoration: none;
+                .noItems {
+                    padding: 0 .5rem;
+                    font-size: 12px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .logo-block {
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
+                    .logo-text {
+                        font-size: 9px;
+                    }
+                }
+                .hamburger {
+                    display: block;
+                    cursor: pointer;
+                }
+                .bar {
+                    background-color: $primary-color;
+                    width: 20px;
+                    height: 3px;
+                    display: block;
+                    margin: 5px;
+                    -webkit-transition: 0.3s ease-in-out;
+                    transition: 0.3s ease-in-out;
+                }
+
+                /* adding active class to the bars  */
+                .hamburger.active .bar:nth-child(2) {
+                    opacity: 0;
+                }
+
+                .hamburger.active .bar:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                .hamburger.active .bar:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+
+                .menu-link {
+                    display: none;
+
+                    .link {
+                        padding: 1rem 0;
+                        color: #fff;
+                        margin: 0;
+                        &:hover, &:active {
+                            color: #fff;
+                        }
+                    }
+
+                    &.active {
+                        position: absolute;
+                        display: flex;
+                        flex-direction: column;
+                        top: 50px;
+                        text-align: center;
+                        width: 100%;
+                        transition: 0.7s ease-in-out;
+                        background-color: black;
+                        padding: 10px;
+                        opacity: 1;
+                }
+                
+                }
+                .search-form {
+                    .search-input {
+                        width: 150px;
+                        margin: 0 5px
+                    }
+                }
+                .cart {
+                    padding: 1rem;
+                    .noItems {
+                        padding: 0 .2rem;
+                    }
+                }
+            }
+            @media (max-width: 768px) {
+                padding: 0;
+                .logo-block {
+                    img {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }

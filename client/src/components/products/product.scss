@@ -1,0 +1,186 @@
+.products {
+    padding: 1rem;
+    img {
+        width: 100%;
+    }
+    .pagination {
+        background-color: #000;
+        margin: -15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        color: #fff;
+        button {
+            background: #fff;
+            padding: 0.5rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            margin-left: 1rem;
+            &:disabled {
+                opacity: 0.5;
+                background-color: gray;
+                cursor: not-allowed;
+            }
+        }
+    }
+    
+    .product-title {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        h1 {
+            font-size: 22px;
+        }
+        a {
+            color: #0156FF;
+            font-size: 13px;
+        }
+        .link-laptop {
+            a {
+                color: #838383;
+                text-decoration: none;
+                margin-right: .5rem;
+            }
+            &:hover {
+                color: hsl(0, 0%, 0%);
+                text-decoration: underline;
+            }
+        }
+    }
+    .product-block {
+        display: flex;
+        margin-top: 1rem;
+        padding: 1rem;
+        
+        .price-ranges {
+            background-color: rgb(216, 213, 213);
+            padding: 2rem 0.5rem;
+            border: 1px solid #0156FF;
+            width: 800px;
+            height: 100%;
+            margin-right: 1rem;
+            hr {
+                color: rgb(59, 59, 216);
+            }
+            h2 {
+                text-align: center;
+                padding: 1rem 0;
+            }
+            .price-range-link {
+                display: flex;
+                flex-direction: row;
+                color: #000;
+                padding: 0.4rem 0;
+                margin-top: 1rem;
+                font-size: 12px;
+                text-decoration: none;
+                &:hover {
+                    color: green
+                }
+            }
+        }
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            
+        
+            .product-badge {
+                background-color: #fff;
+                padding: 1.5rem;
+                width: 240px;
+                &:hover {
+                    border: 1px solid gray;
+                }
+                .product-link {
+                    color: #000;
+                    text-decoration: none;
+                    
+                }
+                img {
+                    width: 200px;
+                    height: 200px;
+                    margin: 1rem 0;
+                }
+                .small {
+                    font-weight: 500;
+                    font-size: 11px;
+                    // margin: 0;
+                }
+                .stock {
+                    color: #78A962;
+                    font-size: 11px;
+                    margin-left: .5rem;
+                }
+                .red {
+                    color: red;
+                    font-size: 11px;
+                    margin-left: .5rem;
+                }
+                .review {
+                    color: #A2A6B0;
+                    font-size: 12px;
+                    .star {
+                        color: #E9A426
+                    }
+                    span {
+                        margin-left: .5rem;
+                    }
+                }
+                .strike {
+                    color: #666;
+                    font-size: 12px;
+                    text-decoration-line: line-through;
+                }
+                p {
+                    padding: .3rem 0;
+                }
+                .details {
+                    font-size: 13px;
+                }
+                .productName{
+                    &:hover {
+                        color: red;
+                    }
+                }
+            
+            }
+    }
+        .back-tag {
+            background-image: url('../../images/backdrop.png');
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 200px;
+            color: #fff;
+            text-align: center;
+            h2 {
+                font-size: 22px;
+            }
+            a {
+                color: #fff;
+                font-size: 12px;
+                margin-top: 3rem;
+            }
+        }
+        @media screen and (max-width: 700px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            .price-ranges {
+                width: 100%;
+            }
+            .badges {
+                margin: 1rem 0;
+                .product-badge {
+                    width: 50%;
+                    padding: 0.5rem;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+$mainColor: rgba(255, 255, 255, 0.50);
+$whiteColor: #fff;
+$primaryColor: #0156FF;
+
+footer {
+    background-color: #000;
+    color: $mainColor;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+
+    .newsletter {
+        .newsletter-text {
+            h1 {
+                color: $whiteColor;
+                padding-bottom: .5rem;
+            }
+        }
+        .newsletter-form {
+            margin: 1rem 0;
+            .input {
+                background-color: transparent;
+                // width: 300px;
+                padding: .8rem 1rem;
+                border-radius: 25px;
+                border: 2px solid $whiteColor;
+                margin-right: 20px;
+                color: $whiteColor;
+                text-align: center;
+            }
+
+            button {
+                padding: .8rem 1rem;
+                border-radius: 25px;
+                border: none;
+                color: #fff;
+                font-weight: 600;
+                background-color: $primaryColor;
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .content-list {
+            margin: 1rem 0;
+            h3 {
+                padding-bottom: .5rem;
+            }
+            .list {
+                list-style-type: none;
+                width: 200px;
+                font-size: 13px;
+                color: $whiteColor;
+
+                .color {
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+
+    .license {
+        display: flex;
+        float: right;
+        font-size: 11px;
+        width: 100px;
+        padding-bottom: 2rem;
+    }
+    .line {
+        margin: 2rem 2rem 0;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+        border-color: $mainColor;
+    }
+
+    .payment-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        // position: fixed;
+
+        .newsletter {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .newsletter-text {
+                h1 {
+                    width: 300px;
+                    line-height: 132.5%;
+                    font-size: 38px;
+                }
+            }
+            .newsletter-form {
+                .input {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.dashboard {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+
+    form {
+        h1, p {
+            text-align: center;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        padding: 2rem 3rem;
+        width: 100%;
+        input, textarea {
+            width: 100%;
+            margin: 1rem 0;
+            border-radius: 5px;
+            padding: 0.8rem 1rem;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            
+        }
+        textarea {
+            height: 150px;
+        }
+        .label-select {
+            font-size: 1rem;
+            margin-left: 1rem;
+            padding: 0.5rem;
+            color: rgb(74, 40, 27)
+        }
+        .addTag {
+            border: none;
+            background-color: green;
+            color: #fff;
+            padding: 0.3rem 0.5rem
+        }
+
+        .submit {
+            background-color: #fff;
+            color: #1e1eb9;
+            padding: 0.8rem 1rem;
+            border: none;
+            font-weight: bold;
+            margin: 1rem 0;
+            border-radius: 3px;
+            &:hover {
+               color: #fff;
+                background-color: #1e1eb9; 
+            }
+        }
+        
+        .addimages {
+            color: #fff;
+            background-color: blue;
+            padding: 0.6rem 0.8rem;
+        }
+        .imagenames {
+            background-color: #fff;
+            margin-bottom: 1rem;
+            list-style: none;
+            font-size: 12px;
+            padding: 0.5rem;
+            margin-top: -1rem;
+        }
+
+        .tags-input {
+            display: inline-block;
+            position: relative;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            padding: 5px;
+            width: 100%;
+             ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    display: inline-block; 
+                    background-color: rgb(54, 54, 240); 
+                    color: #f2f2f2; 
+                    border-radius: 20px;
+                    font-size: 12px;
+                    padding: 5px 10px; 
+                    margin-right: 5px; 
+                    margin-bottom: 5px;
+                    font-family: 600;
+                }
+             }
+
+             input[type="text"] { 
+                border: none; 
+                outline: none; 
+                padding: 8px; 
+                &:focus {
+                    outline: none;
+                }
+             }
+             .delete-button { 
+                background-color: transparent; 
+                border: none; 
+                color: #fff; 
+                cursor: pointer; 
+                margin-left: 5px; 
+            } 
+        }
+        
+    }
+    
+}

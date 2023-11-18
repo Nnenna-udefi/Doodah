@@ -1,0 +1,95 @@
+.container-fluid {
+    margin: 2rem 0;
+    .admin-welcome {
+        display: flex;
+        justify-content: space-around;
+        .signout-btn {
+            padding: 0.6rem 1rem;
+            background-color: transparent;
+            .link {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+        .active {
+            text-decoration: none;
+            color: #fff;
+            background-color: black;
+            padding: 0.8rem 1rem;
+        }
+    }
+    .product-table {
+        margin: 2rem;
+        h3 {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        .product-list {
+            border-collapse: collapse;
+            width: 100%;
+            td{
+                border: 1px solid #ddd;
+                padding: 0.5rem;
+                .delete-btn {
+                    color: #fff;
+                    background-color: red;
+                    border: none;
+                    border-radius: 2px;
+                    padding: 0.5rem;
+                    cursor: pointer;
+                    &:hover {
+                        padding: 0.6rem;
+                    }
+                }
+            }
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            &:hover {
+                background-color: #ddd;
+            }
+            th {
+                border: 1px solid #ddd;
+                padding: 0.8rem 0.5rem;
+                text-align: left;
+                background-color: #2920aa;
+                color: #fff;
+            }
+        }
+    }
+}
+.editedForm {
+    display: flex;
+    justify-content: center;
+    form {
+        margin: 2rem;
+        width: 600px;
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        button {
+            margin: 1rem 0;
+            padding: 0.5rem;
+            background-color: #000;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #fff;
+                color: #000;
+            }
+        }
+
+        select {
+            margin-left: 1rem;
+            background-color: rgb(166, 163, 163);
+            border: none;
+            padding: 0.5rem;
+            border-radius: 3px;
+        }
+    }
+}
