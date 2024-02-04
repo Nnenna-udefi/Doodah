@@ -2,6 +2,7 @@
   "name": "doodah-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://doodah-frontend.onrender.com",
   "dependencies": {
     "-": "0.0.1",
     "@chakra-ui/react": "^2.8.1",
